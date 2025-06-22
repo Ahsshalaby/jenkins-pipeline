@@ -1,0 +1,110 @@
+<!-- using this guide to different HTML form elements https://www.w3schools.com/html/html_forms.asp -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Student Survey Form</title>
+</head>
+<body>
+    <p> hello world this is my survey form</p>
+
+    <p> Please Enter These Recquired Text Input Fields</p>
+
+    <form>
+<!-- Text Boxes Recquired Fields-->
+<label for="firstName">First name:</label><br>
+  <input type="text" id="firstName" name="firstName" required>
+  <br>
+<label for="lastName">Last name:</label><br>
+  <input type="text" id="lastName" name="lastName" required>
+  <br>
+<label for="streetAddress">Street Address:</label><br>
+  <input type="text" id="streetAddress" name="streetAddress" required>
+  <br>
+<label for="city">City:</label><br>
+  <input type="text" id="city" name="city" required>
+  <br>
+<label for="state">State:</label><br>
+  <input type="text" id="state" name="state" required>
+  <br>
+<label for="zip">Zip:</label><br>
+  <input type="text" id="zip" name="zip" required>
+  <br>
+<label for="telephone">Telephone Number:</label><br>
+  <input type="text" id="telephone" name="telephone" required>
+  <br>
+<label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" required>
+  <br>
+<label for="date">Date:</label><br>
+  <input type="date" id="date" name="date" required>
+  <br>
+
+<!-- Checkboxes-->
+<p>What did you Like most about Campus?</p> <br>
+<input type="checkbox" id="students" name="students" value="students">
+  <label for="students"> Other Students</label><br>
+
+<input type="checkbox" id="location" name="location" value="location">
+  <label for="location"> Location of the School</label><br>
+
+<input type="checkbox" id="campus" name="campus" value="campus">
+  <label for="location"> The Campus</label><br>
+
+<input type="checkbox" id="atmosphere" name="atmosphere" value="atmosphere">
+  <label for="atmosphere"> The atmosphere at School</label><br>
+
+<input type="checkbox" id="dorm" name="dorm" value="dorm">
+  <label for="atmosphere"> The Dorms</label><br>
+
+<input type="checkbox" id="sports" name="sports" value="sports">
+  <label for="atmosphere"> The Sports and athletics</label><br>
+
+
+<!-- Radio Buttons -->
+<p> How did you become interested in the University?</p><br>
+ <input type="radio" id="friends" name="interested" value="friends">
+<label for="friends">friends</label><br>
+
+ <input type="radio" id="tv" name="interested" value="tv">
+<label for="tv">television</label><br>
+
+ <input type="radio" id="internet" name="interested" value="internet">
+<label for="internet">internet</label><br>
+
+ <input type="radio" id="other" name="interested" value="other">
+<label for="other">Other</label><br>
+
+<!-- dropdown-->
+ <p> How likely are you to recommend George Mason to Other Students</p><br>
+
+<label for="likely">How likely?:</label>
+
+<select name="likely" id="likely">
+  <option value="Very Likely">Very likely</option>
+  <option value="Likely">Likely</option>
+  <option value="Unlikely">Unlikely</option>
+
+</select> <br>
+
+<!-- Raffle Text Box-->
+ <p>Enter 10 numbers seperated by commas ranging from 1-100</p>
+<label for="raffle">Your Raffle Number:</label><br>
+  <input type="text" id="raffle" name="raffle">
+  <br>
+
+<!-- Additional Comments-->
+  <p>Enter Additional Comments you May Have:</p>
+<label for="comments">Comments:</label><br>
+  <input type="text" id="comment" name="comment">
+  <br>
+
+<br>
+<input type="submit" value="Submit">
+
+
+<input type="reset" value="Cancel" >
+</form> 
+
+</body>
+</html>
