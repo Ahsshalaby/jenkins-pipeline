@@ -53,8 +53,8 @@ pipeline {
             steps {
                 withKubeConfig([credentialsId: KUBECONFIG_CRED_ID]) {
                         sh '''
-                        kubectl set image deployment/hw2app-deployment hw2app=${DOCKER_IMAGE}:latest -n ${K8S_NAMESPACE}
-                        kubectl rollout status deployment/hw2app-deployment -n ${K8S_NAMESPACE}
+                        kubectl set image deployment/hw2acs-deployment hw2app=${DOCKER_IMAGE}:latest -n ${K8S_NAMESPACE}
+                        kubectl rollout status deployment/hw2acs-deployment -n ${K8S_NAMESPACE}
                         '''
                 }
             }
