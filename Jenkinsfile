@@ -12,7 +12,7 @@ pipeline {
 
 	    stage ('Clone Repository'){
 		    steps{
-			    git 'https://github.com/Ahsshalaby/jenkins-pipeline.git'
+			    git url: 'https://github.com/Ahsshalaby/jenkins-pipeline.git', branch: 'main'
 		    }
 	    }
 
