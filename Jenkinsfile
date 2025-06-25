@@ -61,6 +61,7 @@ pipeline {
                 withKubeConfig([credentialsId: KUBECONFIG_CRED_ID]) {
                         sh '''
                         kubectl set image deployment/hw2acs-deployment container-0=${DOCKER_IMAGE}:latest -n ${K8S_NAMESPACE}
+			kubectl rollout restart deployment hw2acs-deployment -n ${K8S_NAMESPACE}
                         kubectl rollout status deployment/hw2acs-deployment -n ${K8S_NAMESPACE}
                         '''
                 }
