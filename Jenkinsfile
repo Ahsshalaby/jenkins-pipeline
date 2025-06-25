@@ -10,6 +10,12 @@ pipeline {
 
     stages {
 
+	    stage('Clean Workspace') {
+    steps {
+        cleanWs()
+    }
+}
+
 	    stage ('Clone Repository'){
 		    steps{
 			    git url: 'https://github.com/Ahsshalaby/jenkins-pipeline.git', branch: 'main'
