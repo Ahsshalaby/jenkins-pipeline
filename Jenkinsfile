@@ -9,7 +9,12 @@ pipeline {
     }
 
     stages {
-     
+
+	    stage ('Clone Repository'){
+		    steps{
+			    git 'https://github.com/Ahsshalaby/jenkins-pipeline.git'
+		    }
+	    }
 
 
 /*
